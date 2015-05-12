@@ -75,5 +75,15 @@
 
 	Resources:
 
+
+		learn ionic:
+
+			http://learn.ionicframework.com/
+
+		Cordova api / extensions:
+
+			http://ngcordova.com/
+
 		Ionic Framework Demo by Matt Stauffer:
-		https://www.youtube.com/watch?v=nh9EARpk-dc
+
+			https://www.youtube.com/watch?v=nh9EARpk-dc
