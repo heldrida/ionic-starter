@@ -18,3 +18,9 @@
 
 		- Gulp (optional)
 
+
+
+	Resources:
+
+		Ionic Framework Demo by Matt Stauffer:
+		https://www.youtube.com/watch?v=nh9EARpk-dc
