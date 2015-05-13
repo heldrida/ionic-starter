@@ -72,6 +72,52 @@
 				*1 ionic platform add [PLATFORM], example
 				*1 ionic platform add android
 
+		- Creating new project:
+
+			- install dependencies running npm install
+
+	
+	Emulator:
+
+		For android:
+
+			- Install the Android SDK
+			- Add the Android SDK Path to the the OS Environment Path
+			- Since the default Android AVD (Android Virtual Device) is really slow, use Genymotion instead (also slow, but better). It's possible to test on the device, but unfortunately at the time of writting, the device wasn't detected `adb devices -l`
+
+			* this steps don't work on windows Bash emulator for some reason, so all the comands should run on `powershell` if windows
+
+			* fixing issue (if device not detected `adb  devices`):
+
+				https://androidsecurity.wordpress.com/2013/06/05/install-google-nexus-4-adb-usb-drivers-on-windows-android-studio/
+
+
+				Samsung USB drivers
+				
+					http://developer.samsung.com/technical-doc/view.do?v=T000000117
+
+
+				Google USB Driver:
+
+					http://developer.android.com/sdk/win-usb.html
+
+				OEM usb:
+
+					http://developer.android.com/tools/extras/oem-usb.html#InstallingDriver
+
+
+				Restart adb server:
+
+					adb kill-server
+					adb start-server
+					adb devices
+
+				Other fix:
+
+					Ensure debugging is enabled
+					Install device drivers
+					If it still doesn't work use this http://koush.com/post/universal-adb-driver, reboot and try again should definitely work.
+
 
 	Resources:
 
@@ -87,3 +133,8 @@
 		Ionic Framework Demo by Matt Stauffer:
 
 			https://www.youtube.com/watch?v=nh9EARpk-dc
+
+
+		Geny motion:
+
+			https://www.genymotion.com
